@@ -1,0 +1,19 @@
+
+version: '3'
+services:
+  db:
+    image: postgres:15.3
+    container_name: dcarbon-web
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_DATABASE=$POSTGRES_DATABASE
+      - POSTGRES_USERNAME=$POSTGRES_USERNAME
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+    restart: always
+   
+    volumes:
+      - ./pgData:/var/lib/postgresql/data
+    ports:
+      - 5435:5432
+ 

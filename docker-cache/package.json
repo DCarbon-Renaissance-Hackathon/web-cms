@@ -1,0 +1,41 @@
+{
+  "name": "web-cms",
+  "private": true,
+  "version": "0.1.0",
+  "docker_path" : "harbor.viet-tin.com/dcarbon/dcarbon-web-cms",
+  "description": "Website cms for dcarbon website",
+  "scripts": {
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "dk-build-cache" : "docker build -t %npm_package_docker_path%:cache .",
+    "dk-build" : "docker build -t %npm_package_docker_path%:v%npm_package_version% .",
+    "dk-run" : "docker run -p 1337:1337 -t %npm_package_docker_path%:v%npm_package_version%",
+    "dk-push" : "docker push %npm_package_docker_path%:v%npm_package_version%"
+ 
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.10.7",
+    "@strapi/plugin-users-permissions": "4.10.7",
+    "@strapi/plugin-i18n": "4.10.7",
+    "pg": "8.8.0",
+    "strapi-provider-custom-upload": "file:providers/custom-upload"
+  
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "1855b19d-133d-424a-a128-efa8f6cfbd57"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
+
+    
