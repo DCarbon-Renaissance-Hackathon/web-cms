@@ -1,0 +1,11 @@
+node_modules
+cache
+docker-cache
+docker-compose
+build
+.dockerignore
+.editorconfig
+.env
+.eslintignore
+.eslintrc
+.gitignore
