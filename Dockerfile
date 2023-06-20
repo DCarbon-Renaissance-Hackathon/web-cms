@@ -1,4 +1,4 @@
-FROM harbor.viet-tin.com/dcarbon/dcarbon-web-cms:cache
+FROM harbor.viet-tin.com/dcarbon/web-cms:cache
 WORKDIR /dcarbon-web
 COPY . . 
 

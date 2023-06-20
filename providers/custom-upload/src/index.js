@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const fse = require("fs-extra");
 
-const UPLOADS_FOLDER_NAME = "uploads";
+const UPLOADS_FOLDER_NAME = "cms/uploads";
 
 module.exports = {
   init(providerOptions) {
