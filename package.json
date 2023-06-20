@@ -1,8 +1,8 @@
 {
   "name": "web-cms",
   "private": true,
-  "version": "0.1.0",
-  "docker_path" : "harbor.viet-tin.com/dcarbon/dcarbon-web-cms",
+  "version": "0.0.1",
+  "docker_path" : "harbor.viet-tin.com/dcarbon/web-cms",
   "description": "Website cms for dcarbon website",
   "scripts": {
     "dev": "strapi develop",
