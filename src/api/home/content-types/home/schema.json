@@ -10,13 +10,22 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "download": {
       "displayName": "download",
       "type": "component",
       "repeatable": true,
-      "component": "files.download"
+      "component": "files.download",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
