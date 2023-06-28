@@ -1,16 +1,16 @@
 {
   "name": "web-cms",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.1",
   "docker_path" : "harbor.viet-tin.com/dcarbon/web-cms",
-  "description": "Website cms for dcarbon website",
+  "description": "Website cms for dcarbon website", 
   "scripts": {
     "dev": "strapi develop",
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "dk-build-cache" : "cd docker-cache && docker build -t $npm_package_docker_path:cache .",
+    "dk-cache" : "cd docker-cache && docker build -t $npm_package_docker_path:cache .",
     "dk-build" : "docker build -t $npm_package_docker_path:v$npm_package_version .",
     "dk-run" : "docker run -p 1337:1337 -t $npm_package_docker_path:v$npm_package_version",
     "dk-push" : "docker push $npm_package_docker_path:v$npm_package_version"
